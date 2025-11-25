@@ -1,0 +1,171 @@
+/* =========================
+   GLOBAL STYLING
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e6f0ff, #ffffff);
+    color: #003366;
+}
+
+
+/* =========================
+   FIXED SIDEBAR
+========================= */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+
+    padding: 45px 20px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-right: 2px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 4px 0px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   PROFILE PICTURE
+========================= */
+.pictur1 {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #4d9fff;
+    box-shadow: 0 0 25px rgba(77, 159, 255, 0.6);
+    margin: auto;
+    transition: 0.4s ease;
+}
+.pictur1:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 0 35px rgba(77, 159, 255, 0.8);
+}
+
+
+/* =========================
+   SIDEBAR TEXT
+========================= */
+.sidebar h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #444;
+}
+
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+.navbar {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.navbar a {
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #1b263b;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background: #e3f2fd;
+    color: #005bea;
+    transform: translateX(8px);
+}
+
+.navbar .active {
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    color: white;
+}
+
+
+/* =========================
+   MAIN CONTENT (RIGHT SIDE)
+========================= */
+.content {
+    margin-left: 30%;      /* Exactly matches sidebar width */
+    padding: 60px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #a3d1ff;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        box-shadow: none;
+        padding-bottom: 30px;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        margin-top: 20px;
+    }
+}
+

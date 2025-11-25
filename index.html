@@ -3,110 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
-        background-color: white;
-    }
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-     h2{
-        font-family: serif;
-       
-    }
-    .one{
-        background-color: rgba(138, 132, 132, 0.26);
-        height: auto;
-        text-align: center;
-    }
-    .pictur1 {
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      padding: 15px 0;
-    }
-    .navbar{
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .navbar a{
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size:medium;
-        color: black;
-        padding: 3px 1px;
-    }
-     .navbar .active{
-        color: blue;
-        border-bottom: 2px solid blue;
-        border-radius: 5px;
-        font-weight: bold;
-     }
-    .navbar a:hover{
-        color: blue;
-        border-bottom: 2px solid blue;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-    
-    .two{
-        background-image: url(bg_image.jpg);
-    }
-    .two h1{
-        padding-top: 30%;
-        backdrop-filter: blur(3px); 
-        width: 100%;
-        text-shadow: 2px 2px 2px black;
-        font-family: serif;
-    }
-   
-    button{
-        backdrop-filter: blur(3px); 
-    }
-    button a{
-        text-decoration: none;
-    }
-    button a:hover{
-        color: white;
-    }
-</style>
-<body>
-    <header class="container">
-        <div  class="row">
-            <div class="one col-md-4">
-                <img class="pictur1 " src="WhatsApp Image 2025-11-06 at 14.03.33_199864f0.jpg"/>
-                    <h2>NJUKI JOASH</h2>
-                    <p>Developer and Music producer in Uganda</p>
-                   <div class="navbar">
-                    <a class="active" href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Education</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Work</a>
-                    <a href="#">Contact</a>
-                   </div>
-            </div>
-            <div class="two col-md-8">
-                <div>
-                    <h1>I am<br/>a Designer</h1>
-                    <p> I am a young and passionate software developer and music producer.
-                        I have produced music at stainless records for a period of 3years.
-                    </p>
-                <button type="button" class="btn btn-outline-primary"><a href="#">View my Github</a></button>
-                </div>
-            </div>
-        </div>
+    <title>Home | NJUKI JOASH</title>
 
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     FIXED SIDEBAR
+========================= -->
+<aside class="sidebar">
+    <img class="pictur1" src="images/pic1.jpg" alt="NJUKI JOASH">
+
+    <h2>NJUKI JOASH</h2>
+    <p>Developer & Music Producer</p>
+
+    <nav class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</aside>
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+<main class="content">
+    <section class="hero">
+        <h1>A Must Know</h1>
+
+        <p>
+            I am a young and passionate software developer and music producer.
+            I have produced music at Stainless Records for a period of 3 years.
+        </p>
+
+        <a href="https://github.com/chordflux" target="_blank" class="btn btn-primary hero-btn">
+            View My GitHub
+        </a>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
