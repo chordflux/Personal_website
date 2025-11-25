@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL STYLING
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +11,7 @@ body {
     color: #003366;
 }
 
-/* =========================
-   FIXED SIDEBAR
-========================= */
+
 .sidebar {
     left: 0;
     top: 0;
@@ -28,9 +24,6 @@ body {
     box-shadow: 4px 0px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================
-   PROFILE PICTURE
-========================= */
 .profile-pic {
     width: 180px;
     height: 180px;
@@ -46,9 +39,6 @@ body {
     box-shadow: 0 0 35px rgba(77, 159, 255, 0.8);
 }
 
-/* =========================
-   SIDEBAR TEXT
-========================= */
 .sidebar h2 {
     margin-top: 20px;
     font-size: 28px;
@@ -64,9 +54,7 @@ body {
     color: #444;
 }
 
-/* =========================
-   NAVIGATION LINKS
-========================= */
+
 .navbar {
     margin-top: 25px;
     display: flex;
@@ -97,18 +85,14 @@ body {
     color: white;
 }
 
-/* =========================
-   MAIN CONTENT
-========================= */
+
 .content {
     min-height: auto;
     display: flex;
     align-items: center;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+
 .hero {
     max-width: 650px;
 }
@@ -131,9 +115,7 @@ body {
     font-size: 17px;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+
 @media (max-width: 992px) {
 
     .sidebar {
