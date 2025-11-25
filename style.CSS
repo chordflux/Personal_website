@@ -13,7 +13,6 @@ body {
     color: #003366;
 }
 
-
 /* =========================
    FIXED SIDEBAR
 ========================= */
@@ -23,21 +22,18 @@ body {
     top: 0;
     width: 30%;
     height: 100vh;
-
     padding: 45px 20px;
     text-align: center;
-
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(12px);
     border-right: 2px solid rgba(0, 0, 0, 0.08);
     box-shadow: 4px 0px 25px rgba(0, 0, 0, 0.08);
 }
 
-
 /* =========================
    PROFILE PICTURE
 ========================= */
-.pictur1 {
+.profile-pic {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -47,11 +43,10 @@ body {
     margin: auto;
     transition: 0.4s ease;
 }
-.pictur1:hover {
+.profile-pic:hover {
     transform: scale(1.08) rotate(2deg);
     box-shadow: 0 0 35px rgba(77, 159, 255, 0.8);
 }
-
 
 /* =========================
    SIDEBAR TEXT
@@ -70,7 +65,6 @@ body {
     font-size: 15px;
     color: #444;
 }
-
 
 /* =========================
    NAVIGATION LINKS
@@ -105,18 +99,16 @@ body {
     color: white;
 }
 
-
 /* =========================
-   MAIN CONTENT (RIGHT SIDE)
+   MAIN CONTENT
 ========================= */
 .content {
-    margin-left: 30%;      /* Exactly matches sidebar width */
+    margin-left: 30%;
     padding: 60px;
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
-
 
 /* =========================
    HERO SECTION
@@ -143,7 +135,6 @@ body {
     font-size: 17px;
 }
 
-
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
@@ -167,5 +158,13 @@ body {
         font-size: 42px;
         margin-top: 20px;
     }
-}
 
+    .hero p {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        width: 100%;
+        font-size: 16px;
+    }
+}
