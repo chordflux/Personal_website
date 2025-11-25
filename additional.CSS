@@ -1,6 +1,4 @@
-/* =======================
-   CARDS FOR SERVICES, SKILLS, WORK
-   ======================= */
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -25,9 +23,6 @@
   margin-bottom: 12px;
 }
 
-/* =======================
-   HERO BUTTONS
-   ======================= */
 .btn-hero {
   display: inline-block;
   margin-right: 15px;
