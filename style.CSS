@@ -17,11 +17,9 @@ body {
    FIXED SIDEBAR
 ========================= */
 .sidebar {
-    position: fixed;
     left: 0;
     top: 0;
-    width: 30%;
-    height: 100vh;
+    height: auto;
     padding: 45px 20px;
     text-align: center;
     background: rgba(255, 255, 255, 0.6);
@@ -103,9 +101,7 @@ body {
    MAIN CONTENT
 ========================= */
 .content {
-    margin-left: 30%;
-    padding: 60px;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
 }
